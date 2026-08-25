@@ -16,7 +16,8 @@ As três imagens — original, 4 bits e 8 bits — parecem parecidas porque 16 n
 
 > Em resumo: quanto menos bits, maior a perda de detalhes e mais abruptas ficam as transições entre claro e escuro. Quanto mais bits, mais suaves e naturais são essas transições.
 
-
+> Posterização: redução visível da quantidade de tons. A imagem passa a apresentar regiões separadas por níveis bem definidos, como ocorre claramente nas versões de 1 e 2 bits.<br>
+> Banding: aparecimento de faixas ou “degraus” em áreas que deveriam ter transições suaves, como um degradê. Pode aparecer na versão de 4 bits, principalmente nas regiões sombreadas.
 
 
 
