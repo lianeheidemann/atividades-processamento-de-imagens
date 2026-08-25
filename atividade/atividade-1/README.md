@@ -1,4 +1,8 @@
-### Exercício: Quantização de Imagem
+## Exercício: Quantização de Imagem
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 
 <img width="30%" src="assets/olho.jpg">
 <img src="assets/quantizacao.png">
