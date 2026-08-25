@@ -2,7 +2,7 @@
 
 Repositório para armazenar as atividades desenvolvidas ao longo da disciplina
 
-Exercício: Quantização de Imagem
+### Exercício: Quantização de Imagem
 
 <img width="30%" src="assets/olho.jpg">
 <img src="assets/quantizacao.png">
@@ -16,11 +16,10 @@ Exercício: Quantização de Imagem
 
 As três imagens — original, 4 bits e 8 bits — parecem parecidas porque 16 níveis de cinza ainda são suficientes para representar visualmente boa parte dos detalhes desse desenho, especialmente por ele já possuir áreas bem definidas e pouco contraste gradual. Porém, observando com atenção, a versão de 4 bits apresenta pequenas faixas ou “degraus” nas regiões sombreadas. Esse efeito é chamado de banding ou posterização.
 
-> Em resumo: quanto menos bits, maior a perda de detalhes e mais abruptas ficam as transições entre claro e escuro. Quanto mais bits, mais suaves e naturais são essas transições.
-
 > Posterização: redução visível da quantidade de tons. A imagem passa a apresentar regiões separadas por níveis bem definidos, como ocorre claramente nas versões de 1 e 2 bits.<br>
 > Banding: aparecimento de faixas ou “degraus” em áreas que deveriam ter transições suaves, como um degradê. Pode aparecer na versão de 4 bits, principalmente nas regiões sombreadas.
 
+Em resumo: quanto menos bits, maior a perda de detalhes e mais abruptas ficam as transições entre claro e escuro. Quanto mais bits, mais suaves e naturais são essas transições.
 
 
 
