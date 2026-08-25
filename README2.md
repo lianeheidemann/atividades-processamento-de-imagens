@@ -7,20 +7,6 @@
 
 Repositório para armazenar as atividades desenvolvidas ao longo da disciplina de Processamento de Imagem.
 
-## Estrutura do repositório
-
-```
-atividade/
-└── atividade-1/
-    ├── README.md
-    ├── atividade-1-quantizacao.ipynb
-    └── assets/
-        ├── flor.jpg
-        ├── morango.jpg
-        ├── olho.jpg
-        └── quantizacao.png
-```
-
 ## Atividades
 
 ### [Atividade 1 — Quantização de Imagem](atividade/atividade-1/README.md)
