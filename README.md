@@ -2,6 +2,7 @@
 
 Exercício: Quantização de Imagem
 
+<img width="30%" src="assets/olho.jpg">
 <img src="assets/quantizacao.png">
 
 À medida que reduzimos o número de bits, diminuímos a quantidade de tons de cinza disponíveis:
