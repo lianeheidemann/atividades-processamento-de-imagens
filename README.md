@@ -15,7 +15,7 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 
 - Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - Python
 - NumPy
