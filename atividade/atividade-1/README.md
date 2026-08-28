@@ -5,6 +5,7 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lianeheidemann/atividades-processamento-de-imagens/blob/main/atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
 [⬅ Voltar para o repositório principal](../../README.md)
 
@@ -21,7 +22,6 @@ O objetivo é entender o efeito da **quantização de intensidade** em uma image
 - [Análise](#análise)
 - [Como a quantização foi implementada](#como-a-quantização-foi-implementada)
 - [Relação entre bits e qualidade da imagem](#relação-entre-bits-e-qualidade-da-imagem)
-- [Estrutura de arquivos](#estrutura-de-arquivos)
 
 ### Como executar
 
@@ -84,15 +84,6 @@ Em seguida, é calculado o tamanho de cada intervalo de intensidade:
 passo = 256 / niveis
 ```
 
-Por exemplo, para 2 bits, existem 4 níveis, então os 256 valores possíveis são divididos em 4 intervalos de 64 valores:
-
-```
-0–63     → nível 1
-64–127   → nível 2
-128–191  → nível 3
-192–255  → nível 4
-```
-
 A linha:
 
 ```python
@@ -101,15 +92,14 @@ q = np.floor(im / passo) * passo
 
 faz a quantização propriamente dita. Ela agrupa valores de intensidade que pertencem ao mesmo intervalo, fazendo com que diferentes pixels passem a ser representados por um mesmo valor.
 
-Por exemplo, com 2 bits:
+Por exemplo, para 2 bits existem 4 níveis, então os 256 valores possíveis são divididos em 4 intervalos de 64 valores:
 
-```
-40  → 0
-70  → 64
-100 → 64
-150 → 128
-220 → 192
-```
+| Intervalo | Nível | Valor original → quantizado |
+| :-------: | :---: | :--------------------------: |
+| 0–63      | 1     | 40 → 0                       |
+| 64–127    | 2     | 70 → 64, 100 → 64             |
+| 128–191   | 3     | 150 → 128                    |
+| 192–255   | 4     | 220 → 192                    |
 
 Dessa forma, valores diferentes da imagem original são substituídos por uma quantidade menor de valores representativos.
 
@@ -124,16 +114,3 @@ A implementação utiliza operações matemáticas sobre os valores dos pixels c
 ### Relação entre bits e qualidade da imagem
 
 Quanto menor o número de bits, menor é a quantidade de níveis de intensidade disponíveis. Consequentemente, mais valores diferentes precisam ser representados pelo mesmo nível, causando perda de informação — o que produz posterização e, nas regiões de transição suave, o efeito de banding, como descrito no início deste documento.
-
-### Estrutura de arquivos
-
-```
-atividade-1/
-├── atividade-1-quantizacao.ipynb   # Notebook com a implementação e os testes
-├── README.md                       # Este documento
-└── assets/
-    ├── olho.jpg                    # Imagem original usada na análise
-    ├── quantizacao.png             # Comparação entre os níveis de quantização
-    ├── flor.jpg                    # Imagem de exemplo adicional
-    └── morango.jpg                 # Imagem de exemplo adicional
-```
