@@ -21,4 +21,4 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 - NumPy
 - Matplotlib
 - Pillow (PIL)
-- Jupyter/Google Colab
+- Google Colab
