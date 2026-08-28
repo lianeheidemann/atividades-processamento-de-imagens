@@ -3,7 +3,10 @@
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+> Este notebook foi feito para rodar no Google Colab: ele usa `google.colab.files.upload()` para enviar a imagem de entrada.
 
 <img width="30%" src="assets/olho.jpg">
 <img src="assets/quantizacao.png">
@@ -86,18 +89,7 @@ q = q * (255 / (256 - passo))
 
 A implementação utiliza operações matemáticas sobre os valores dos pixels com NumPy, sem utilizar uma função específica de quantização pronta.
 
-Relação entre bits e qualidade da imagem
+### Relação entre bits e qualidade da imagem
 
-Quanto menor o número de bits, menor é a quantidade de níveis de intensidade disponíveis. Consequentemente, mais valores diferentes precisam ser representados pelo mesmo nível, causando perda de informação.
-
-Isso explica os resultados observados:
-
-```
-- 8 bits: 256 níveis — praticamente igual à imagem original.
-- 4 bits: 16 níveis — mantém boa parte dos detalhes, mas pode apresentar pequenas faixas nas áreas de transição.
-- 2 bits: 4 níveis — apresenta perda significativa de detalhes e transições mais abruptas.
-- 1 bit: 2 níveis — a imagem fica essencialmente em preto e branco, com grande perda de detalhes.
-```
-
-Esse efeito de redução dos tons pode produzir posterização, enquanto as faixas visíveis nas regiões de transição suave são chamadas de banding.
+Quanto menor o número de bits, menor é a quantidade de níveis de intensidade disponíveis. Consequentemente, mais valores diferentes precisam ser representados pelo mesmo nível, causando perda de informação — o que produz posterização e, nas regiões de transição suave, o efeito de banding, como descrito no início deste documento.
 
