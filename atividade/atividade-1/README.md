@@ -35,13 +35,11 @@ O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) foi 
 
 Imagens originais utilizadas como entrada:
 
-<img width="30%" src="assets/olho.jpg" alt="Imagem original">
 <img width="30%" src="assets/olho-2.jpg" alt="Imagem original">
 <img width="30%" src="assets/morango-e-olho.jpg" alt="Imagem original">
 
 Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):
 
-<img src="assets/olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 <img src="assets/olho-2.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 <img src="assets/morango-e-olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 
