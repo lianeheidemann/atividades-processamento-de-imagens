@@ -29,7 +29,7 @@ O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) foi 
 1. Abra o notebook no Colab.
 2. Execute a célula de código — ela vai pedir o upload de uma imagem através de `google.colab.files.upload()`.
 3. Envie uma imagem (por exemplo, uma das disponíveis em [`assets/`](assets)).
-4. A imagem é convertida para tons de cinza e exibida lado a lado com as versões quantizadas em 8, 4, 2 e 1 bit(s).
+4. A imagem é convertida para tons de cinza e exibida lado a lado com as versões quantizadas em 1, 2, 4 e 8 bit(s).
 
 ### Resultado
 
@@ -41,9 +41,9 @@ Imagem original utilizada como entrada:
 
 Comparação entre a imagem original e as versões quantizadas em 8, 4, 2 e 1 bit(s):
 
-<img src="assets/olho.png" alt="Comparação da quantização em 8, 4, 2 e 1 bit(s)">
-<img src="assets/olho-2.png" alt="Comparação da quantização em 8, 4, 2 e 1 bit(s)">
-<img src="assets/morango-e-olho.png" alt="Comparação da quantização em 8, 4, 2 e 1 bit(s)">
+<img src="assets/olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
+<img src="assets/olho-2.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
+<img src="assets/morango-e-olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 
 ### Análise
 
