@@ -12,7 +12,7 @@ Repositório para armazenar as atividades desenvolvidas ao longo da disciplina d
 
 Exercício sobre quantização de imagens em tons de cinza, reduzindo o número de bits (1, 2, 4 e 8 bits) e analisando o impacto na quantidade de detalhes e na suavidade das transições de intensidade, incluindo os efeitos de **posterização** e **banding**.
 
-<img src="atividade/atividade-1/assets/olho-1.png">
+<img src="atividade/atividade-1/assets/morango-e-olho.png">
 
 > Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
