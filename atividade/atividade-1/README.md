@@ -33,25 +33,43 @@ O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) foi 
 
 ### Resultado
 
-**Primeira Imagem:**
+<table>
 
-Imagem original utilizada como entrada:
+<tr>
+<td align="left" valign="top">
+<br>
+
+<strong>Primeira Imagem:</strong>
+
+<p>Imagem original utilizada como entrada:</p>
 
 <img width="30%" src="assets/olho-2.jpg" alt="Imagem original">
 
-Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):
+<p>Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):</p>
 
 <img src="assets/olho-2.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 
-**Segunda Imagem:**
+</td>
+</tr>
 
-Imagem original utilizada como entrada:
+<tr>
+<td align="left" valign="top">
+<br>
+
+<strong>Segunda Imagem:</strong>
+
+<p>Imagem original utilizada como entrada:</p>
 
 <img width="30%" src="assets/morango-e-olho.jpg" alt="Imagem original">
 
-Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):
+<p>Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):</p>
 
 <img src="assets/morango-e-olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
+
+</td>
+</tr>
+
+</table>
 
 ### Análise
 
