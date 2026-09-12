@@ -41,11 +41,11 @@ O notebook [`atividade_2.ipynb`](atividade_2.ipynb) foi feito para rodar no **Go
 
 <p>Imagem original utilizada como entrada:</p>
 
-<img width="30%" src="input/mandala.png" alt="Imagem original">
+<img width="300" src="input/mandala.png" alt="Imagem original">
 
 <p>Imagem convertida para tons de cinza:</p>
 
-<img width="30%" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
+<img width="300" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
 
 <p>Histograma de intensidades da imagem em tons de cinza:</p>
 
