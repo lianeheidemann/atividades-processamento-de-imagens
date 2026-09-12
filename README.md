@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=python&logoColor=white)
 
 Repositório para armazenar as atividades desenvolvidas ao longo da disciplina de Processamento de Imagem.
 
@@ -21,5 +22,22 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 - Python
 - NumPy
 - Matplotlib
+- Pillow (PIL)
+- Google Colab
+
+### [Atividade 2 — Histograma de Imagem](atividade/atividade-2/README.md)
+
+Exercício sobre construção e interpretação do histograma de intensidade de uma imagem em tons de cinza, contando manualmente a quantidade de pixels de cada intensidade (0 a 255) e exibindo o resultado em um gráfico de barras.
+
+<img src="atividade/atividade-2/input/mandala-histograma.png">
+
+> Notebook: [`atividade_2.ipynb`](atividade/atividade-2/atividade_2.ipynb)
+
+**Tecnologias utilizadas**
+
+- Python
+- NumPy
+- Matplotlib
+- Seaborn
 - Pillow (PIL)
 - Google Colab
