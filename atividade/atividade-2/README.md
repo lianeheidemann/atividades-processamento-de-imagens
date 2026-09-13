@@ -1,4 +1,4 @@
-# Atividade 2 (entrega) — Histograma e Correção Gamma em Múltiplas Imagens
+# Atividade 2 — Histograma e Correção Gamma em Múltiplas Imagens
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
