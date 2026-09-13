@@ -7,11 +7,9 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/lianeheidemann/atividades-processamento-de-imagens/blob/main/atividade/atividade-2/archive/operacoes_processamento_imagens.ipynb)
 
-[⬅ Voltar para a Atividade 2](../README.md) · [⬅ Voltar para o repositório principal](../../../README.md)
+[⬅ Voltar para a Atividade 2](../README.md)
 
-### Sobre esta pasta
-
-Esta pasta guarda uma versão paralela/exploratória da Atividade 2: o notebook
+> Esta pasta guarda uma versão paralela/exploratória da Atividade 2: o notebook
 [`operacoes_processamento_imagens.ipynb`](operacoes_processamento_imagens.ipynb), que organiza em
 células as funções construídas em aula — **histograma**, **limiarização**, **expansão de
 contraste**, **equalização de histograma** e **correção gamma** — e depois usa essas funções para
