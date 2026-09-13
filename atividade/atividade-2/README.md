@@ -43,13 +43,13 @@ Três imagens com perfis de iluminação diferentes são usadas para comparar o 
   <tr>
     <td align="left" valign="top">
       <p>Imagens originais:</p>
-      <img width="700" src="output/imagens_originais.png" alt="Três imagens originais: mandala, sorvete e axolote">
+      <img src="output/imagens_originais.png" alt="Três imagens originais: mandala, sorvete e axolote">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top">
       <p>Conversão para tons de cinza:</p>
-      <img width="700" src="output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
+      <img src="output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
     </td>
   </tr>
 </table>
