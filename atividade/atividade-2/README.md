@@ -36,12 +36,12 @@ O notebook [`atividade_2.ipynb`](atividade_2.ipynb) foi feito para rodar no **Go
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <p>Imagem original utilizada como entrada:</p>
-      <img width="250" src="input/mandala.png" alt="Imagem original">
+      <p>Imagem de entrada:</p>
+      <img width="270" src="input/mandala.png" alt="Imagem original">
     </td>
     <td align="center" valign="top" width="50%">
-      <p>Imagem convertida para tons de cinza:</p>
-      <img width="250" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
+      <p>Conversão para tons de cinza:</p>
+      <img width="270" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
     </td>
   </tr>
 </table>
