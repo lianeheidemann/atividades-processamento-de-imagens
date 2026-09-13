@@ -35,11 +35,11 @@ O notebook [`atividade_2.ipynb`](atividade_2.ipynb) foi feito para rodar no **Go
 
 <table>
   <tr>
-    <td align="center" valign="top" width="50%">
+    <td align="left" valign="top" width="50%">
       <p>Imagem de entrada:</p>
       <img width="270" src="input/mandala.png" alt="Imagem original">
     </td>
-    <td align="center" valign="top" width="50%">
+    <td align="left" valign="top" width="50%">
       <p>Conversão para tons de cinza:</p>
       <img width="270" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
     </td>
@@ -48,7 +48,7 @@ O notebook [`atividade_2.ipynb`](atividade_2.ipynb) foi feito para rodar no **Go
 
 <table>
   <tr>
-    <td align="center" valign="top">
+    <td align="left" valign="top">
       <p>Histograma de intensidades da imagem em tons de cinza:</p>
       <img width="588" src="input/mandala-histograma.png"
            alt="Histograma da imagem em níveis de cinza">
