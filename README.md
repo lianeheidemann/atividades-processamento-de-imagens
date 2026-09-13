@@ -33,11 +33,11 @@ Exercício sobre construção e interpretação do histograma de intensidade de 
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Imagem de entrada:</p>
-      <img width="270" src="input/mandala.png" alt="Imagem original">
+      <img width="270" src="atividade/atividade-2/input/mandala.png" alt="Imagem original">
     </td>
     <td align="left" valign="top" width="50%">
       <p>Conversão para tons de cinza:</p>
-      <img width="270" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
+      <img width="270" src="atividade/atividade-2/input/mandala-cinza.png" alt="Imagem em níveis de cinza">
     </td>
   </tr>
 </table>
@@ -46,7 +46,7 @@ Exercício sobre construção e interpretação do histograma de intensidade de 
   <tr>
     <td align="left" valign="top">
       <p>Histograma de intensidades da imagem em tons de cinza:</p>
-      <img width="567" src="input/mandala-histograma.png"
+      <img width="567" src="atividade/atividade-2/input/mandala-histograma.png"
            alt="Histograma da imagem em níveis de cinza">
     </td>
   </tr>
