@@ -7,13 +7,7 @@
 
 [⬅ Voltar para o repositório principal](../../README.md)
 
-### Como executar
-
-O notebook [`atividade_2-entregar.ipynb`](atividade_2-entregar.ipynb) foi adaptado para rodar localmente (fora do Colab):
-
-1. Coloque as três imagens de entrada em [`input/`](input) (`input_1.png`, `input_2.png`, `input_3.png`) ou ajuste os caminhos das variáveis `nome_arquivo_1`, `nome_arquivo_2` e `nome_arquivo_3`.
-2. Execute as células em ordem: carregamento das imagens, conversão para tons de cinza, cálculo dos histogramas e, por fim, a correção gamma.
-3. As figuras geradas são salvas automaticamente em [`output/`](output).
+> Selecionar três imagens — uma escura, uma clara e uma bem exposta —, convertê-las para tons de cinza e analisar seus histogramas. Depois, aplicar uma técnica de melhoria, comparar o antes e o depois e identificar em qual imagem a operação causou menos diferença.
 
 ### 1. Imagens utilizadas
 
