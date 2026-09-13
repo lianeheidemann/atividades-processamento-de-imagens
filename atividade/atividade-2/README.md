@@ -50,7 +50,7 @@ O notebook [`atividade_2.ipynb`](atividade_2.ipynb) foi feito para rodar no **Go
   <tr>
     <td align="left" valign="top">
       <p>Histograma de intensidades da imagem em tons de cinza:</p>
-      <img width="588" src="input/mandala-histograma.png"
+      <img width="567" src="input/mandala-histograma.png"
            alt="Histograma da imagem em níveis de cinza">
     </td>
   </tr>
