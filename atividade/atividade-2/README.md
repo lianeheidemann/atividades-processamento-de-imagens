@@ -76,7 +76,7 @@ plt.hist(
 <table>
   <tr>
     <td align="left" valign="top">
-      <img width="700" src="output/histogramas.png" alt="Histogramas das três imagens">
+      <img src="output/histogramas.png" alt="Histogramas das três imagens">
     </td>
   </tr>
 </table>
