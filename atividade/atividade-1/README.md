@@ -12,24 +12,7 @@
 
 O objetivo é entender o efeito da **quantização de intensidade** em uma imagem em tons de cinza: a imagem original (8 bits, 256 níveis) é reduzida para 4, 2 e 1 bit(s), e o resultado de cada redução é comparado visualmente e explicado.
 
-**Pergunta guia:** o que acontece com os detalhes e com as transições de intensidade da imagem à medida que reduzimos o número de bits?
-
-### Sumário
-
-- [Como executar](#como-executar)
-- [Resultado](#resultado)
-- [Análise](#análise)
-- [Como a quantização foi implementada](#como-a-quantização-foi-implementada)
-- [Relação entre bits e qualidade da imagem](#relação-entre-bits-e-qualidade-da-imagem)
-
-### Como executar
-
-O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) lê uma imagem local (variável `nome`, por padrão [`input/morango.jpg`](input/morango.jpg)):
-
-1. Abra o notebook (localmente ou no Colab).
-2. Ajuste a variável `nome` para o caminho da imagem desejada, se necessário.
-3. Execute as células em ordem: a imagem é convertida para tons de cinza e exibida lado a lado com as versões quantizadas em 1, 2, 4 e 8 bit(s).
-4. A figura gerada é salva automaticamente em [`output/quantizacao.png`](output/quantizacao.png).
+> O que acontece com os detalhes e com as transições de intensidade da imagem à medida que reduzimos o número de bits?
 
 ### Resultado
 
