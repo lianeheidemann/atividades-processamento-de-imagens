@@ -7,22 +7,6 @@
 
 [⬅ Voltar para o repositório principal](../../README.md)
 
-### Sobre o exercício
-
-Esta é a versão de entrega do notebook [`atividade_2-entregar.ipynb`](atividade_2-entregar.ipynb): uma versão enxuta, sem `google.colab.files.upload()`, que carrega três imagens locais diferentes — uma escura, uma clara e uma de tons médios — e aplica sobre elas duas operações:
-
-- construção e comparação do **histograma de intensidade** das três imagens;
-- **correção gamma** (γ = 0,5) aplicada às três imagens ao mesmo tempo.
-
-**Pergunta guia:** como o histograma de uma imagem se relaciona com sua exposição de luz (clara, escura ou balanceada) e como a correção gamma afeta cada um desses casos?
-
-### Sumário
-
-- [Como executar](#como-executar)
-- [1. Imagens utilizadas](#1-imagens-utilizadas)
-- [2. Histograma](#2-histograma)
-- [3. Correção gamma](#3-correção-gamma)
-
 ### Como executar
 
 O notebook [`atividade_2-entregar.ipynb`](atividade_2-entregar.ipynb) foi adaptado para rodar localmente (fora do Colab):
