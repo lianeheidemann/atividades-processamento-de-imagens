@@ -22,13 +22,6 @@ resolver o exercício de diagnóstico de exposição proposto na entrega:
 > intensidades e escolher/aplicar **uma única operação de correção** por imagem, justificando a
 > escolha e o parâmetro usado.
 
-### Sumário
-
-- [Como executar](#como-executar)
-- [1. Funções e testes exploratórios](#1-funções-e-testes-exploratórios)
-- [2. Diagnóstico e correção por imagem](#2-diagnóstico-e-correção-por-imagem)
-- [3. Conclusão](#3-conclusão)
-
 ### Como executar
 
 O notebook [`operacoes_processamento_imagens.ipynb`](operacoes_processamento_imagens.ipynb) já
