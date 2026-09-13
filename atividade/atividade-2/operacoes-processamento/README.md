@@ -43,21 +43,25 @@ de biblioteca:
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Limiarização (pixel a pixel vs. NumPy):</p>
-      <img width="400" src="output/teste_limiarizacao.png" alt="Teste da função de limiarização">
+      <img width="700" src="output/teste_limiarizacao.png" alt="Teste da função de limiarização">
     </td>
+ </tr>
+  <tr>
     <td align="left" valign="top" width="50%">
       <p>Expansão de contraste (pixel a pixel vs. NumPy):</p>
-      <img width="400" src="output/teste_expansao_contraste.png" alt="Teste da função de expansão de contraste">
+      <img width="700" src="output/teste_expansao_contraste.png" alt="Teste da função de expansão de contraste">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Equalização de histograma (manual vs. OpenCV):</p>
-      <img width="400" src="output/teste_equalizacao.png" alt="Teste da função de equalização de histograma">
+      <img width="700" src="output/teste_equalizacao.png" alt="Teste da função de equalização de histograma">
     </td>
+  </tr>
+  <tr>
     <td align="left" valign="top" width="50%">
       <p>Correção gamma (pixel a pixel vs. NumPy):</p>
-      <img width="400" src="output/teste_gamma.png" alt="Teste da função de correção gamma">
+      <img width="700" src="output/teste_gamma.png" alt="Teste da função de correção gamma">
     </td>
   </tr>
 </table>
