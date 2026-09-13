@@ -33,6 +33,12 @@ Exercício com três imagens de perfis de iluminação diferentes (escura, clara
   <tr>
     <td align="left" valign="top">
       <p>Imagens originais e conversão para tons de cinza:</p>
+      <img width="700" src="atividade/atividade-2/output/imagens_originais.png" alt="As três imagens convertidas para tons de cinza">
+    </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+      <p>Imagens originais e conversão para tons de cinza:</p>
       <img width="700" src="atividade/atividade-2/output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
     </td>
   </tr>
