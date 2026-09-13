@@ -52,11 +52,11 @@ O histograma de intensidade conta quantos pixels existem para cada valor de inte
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Imagem de entrada:</p>
-      <img width="270" src="input/mandala.png" alt="Imagem original">
+      <img width="300" src="input/mandala.png" alt="Imagem original">
     </td>
     <td align="left" valign="top" width="50%">
       <p>Conversão para tons de cinza:</p>
-      <img width="270" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
+      <img width="300" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
     </td>
   </tr>
 </table>
@@ -65,7 +65,7 @@ O histograma de intensidade conta quantos pixels existem para cada valor de inte
   <tr>
     <td align="left" valign="top">
       <p>Histograma de intensidades da imagem em tons de cinza (método manual com dois laços):</p>
-      <img width="567" src="input/mandala-histograma.png"
+      <img width="700" src="input/mandala-histograma.png"
            alt="Histograma da imagem em níveis de cinza">
     </td>
   </tr>
@@ -96,7 +96,7 @@ O negativo digital inverte a intensidade de cada pixel: tons escuros viram claro
   <tr>
     <td align="left" valign="top">
       <p>Imagem original e negativo (calculado com NumPy):</p>
-      <img src="input/mandala-negativo.png" alt="Imagem original e negativo digital">
+      <img width="700" src="input/mandala-negativo.png" alt="Imagem original e negativo digital">
     </td>
   </tr>
 </table>
@@ -118,13 +118,13 @@ A equalização redistribui as intensidades da imagem de forma a espalhar melhor
   <tr>
     <td align="left" valign="top">
       <p>Equalização manual do histograma:</p>
-      <img src="input/mandala-equalizacao-manual.png" alt="Imagem original e imagem com histograma equalizado manualmente">
+      <img width="700" src="input/mandala-equalizacao-manual.png" alt="Imagem original e imagem com histograma equalizado manualmente">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top">
       <p>Equalização com <code>cv2.equalizeHist()</code>:</p>
-      <img src="input/mandala-equalizacao-opencv.png" alt="Imagem original e imagem equalizada com OpenCV">
+      <img width="700" src="input/mandala-equalizacao-opencv.png" alt="Imagem original e imagem equalizada com OpenCV">
     </td>
   </tr>
 </table>
@@ -150,11 +150,11 @@ A correção gamma aplica uma função de potência sobre a intensidade normaliz
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Correção gamma — pixel a pixel (γ = 0,5):</p>
-      <img width="270" src="input/mandala-gamma-pixel.png" alt="Correção gamma calculada pixel a pixel">
+      <img width="300" src="input/mandala-gamma-pixel.png" alt="Correção gamma calculada pixel a pixel">
     </td>
     <td align="left" valign="top" width="50%">
       <p>Correção gamma — NumPy (γ = 0,5):</p>
-      <img width="270" src="input/mandala-gamma-numpy.png" alt="Correção gamma calculada com NumPy">
+      <img width="300" src="input/mandala-gamma-numpy.png" alt="Correção gamma calculada com NumPy">
     </td>
   </tr>
 </table>
