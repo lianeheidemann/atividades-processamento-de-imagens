@@ -9,8 +9,7 @@
 
 [⬅ Voltar para a Atividade 2](../README.md)
 
-> Esta pasta guarda uma versão paralela/exploratória da Atividade 2: o notebook
-[`operacoes_processamento_imagens.ipynb`](operacoes_processamento_imagens.ipynb), que organiza em
+> Esta pasta guarda uma versão paralela/exploratória da Atividade 2: o notebook, que organiza em
 células as funções construídas em aula — **histograma**, **limiarização**, **expansão de
 contraste**, **equalização de histograma** e **correção gamma** — e depois usa essas funções para
 resolver o exercício de diagnóstico de exposição proposto na entrega:
