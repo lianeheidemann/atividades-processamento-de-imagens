@@ -35,7 +35,7 @@ em [`../input/`](../input):
 
 ### 1. Funções e testes exploratórios
 
-Antes do exercício principal, cada função da aula é definida e testada isoladamente sobre uma das
+Antes do exercício principal, cada função da é definida e testada isoladamente sobre uma das
 imagens, comparando a versão pixel a pixel com a versão vetorizada (NumPy) ou com a função pronta
 de biblioteca:
 
