@@ -28,7 +28,7 @@ em [`../input/`](../input):
 <table>
   <tr>
     <td align="left" valign="top">
-      <img width="700" src="output/imagens_carregadas.png" alt="As três imagens de entrada, já em tons de cinza">
+      <img width="700" src="output/imagens_originais.png" alt="As três imagens de entrada, já em tons de cinza">
     </td>
   </tr>
 </table>
