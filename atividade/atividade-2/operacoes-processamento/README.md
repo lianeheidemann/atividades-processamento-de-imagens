@@ -17,11 +17,6 @@ células as funções construídas em aula — **histograma**, **limiarização*
 contraste**, **equalização de histograma** e **correção gamma** — e depois usa essas funções para
 resolver o exercício de diagnóstico de exposição proposto na entrega:
 
-> Para três imagens com perfis de exposição diferentes (escura demais, clara demais/saturada e bem
-> exposta), converter para tons de cinza, plotar o histograma, diagnosticar a distribuição de
-> intensidades e escolher/aplicar **uma única operação de correção** por imagem, justificando a
-> escolha e o parâmetro usado.
-
 ### Como executar
 
 O notebook [`operacoes_processamento_imagens.ipynb`](operacoes_processamento_imagens.ipynb) já
