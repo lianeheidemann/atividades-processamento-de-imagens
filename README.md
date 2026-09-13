@@ -25,9 +25,9 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 - Pillow (PIL)
 - Google Colab
 
-### [Atividade 2 — Histograma de Imagem](atividade/atividade-2/README.md)
+### [Atividade 2 — Histograma, Negativo, Equalização e Correção Gamma](atividade/atividade-2/README.md)
 
-Exercício sobre construção e interpretação do histograma de intensidade de uma imagem em tons de cinza, contando manualmente a quantidade de pixels de cada intensidade (0 a 255) e exibindo o resultado em um gráfico de barras.
+Exercício com quatro operações clássicas de processamento de imagens em tons de cinza, cada uma implementada de forma manual (pixel a pixel) e de forma vetorizada/pronta (NumPy, Matplotlib ou OpenCV): construção do **histograma de intensidade**, cálculo do **negativo digital**, **equalização do histograma** e **correção gamma**.
 
 <table>
   <tr>
@@ -52,6 +52,19 @@ Exercício sobre construção e interpretação do histograma de intensidade de 
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td align="left" valign="top" width="50%">
+      <p>Negativo digital:</p>
+      <img width="270" src="atividade/atividade-2/input/mandala-negativo.png" alt="Imagem original e negativo digital">
+    </td>
+    <td align="left" valign="top" width="50%">
+      <p>Histograma equalizado:</p>
+      <img width="270" src="atividade/atividade-2/input/mandala-equalizacao-manual.png" alt="Imagem original e imagem com histograma equalizado">
+    </td>
+  </tr>
+</table>
+
 > Notebook: [`atividade_2.ipynb`](atividade/atividade-2/atividade_2.ipynb)
 
 **Tecnologias utilizadas**
@@ -61,4 +74,5 @@ Exercício sobre construção e interpretação do histograma de intensidade de 
 - Matplotlib
 - Seaborn
 - Pillow (PIL)
+- OpenCV
 - Google Colab
