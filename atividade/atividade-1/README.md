@@ -24,28 +24,26 @@ O objetivo é entender o efeito da **quantização de intensidade** em uma image
 
 ### Como executar
 
-O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) foi feito para rodar no **Google Colab**:
+O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) lê uma imagem local (variável `nome`, por padrão [`input/morango.jpg`](input/morango.jpg)):
 
-1. Abra o notebook no Colab.
-2. Execute a célula de código — ela vai pedir o upload de uma imagem através de `google.colab.files.upload()`.
-3. Envie uma imagem (por exemplo, uma das disponíveis em [`input/`](input)).
-4. A imagem é convertida para tons de cinza e exibida lado a lado com as versões quantizadas em 1, 2, 4 e 8 bit(s).
+1. Abra o notebook (localmente ou no Colab).
+2. Ajuste a variável `nome` para o caminho da imagem desejada, se necessário.
+3. Execute as células em ordem: a imagem é convertida para tons de cinza e exibida lado a lado com as versões quantizadas em 1, 2, 4 e 8 bit(s).
+4. A figura gerada é salva automaticamente em [`output/quantizacao.png`](output/quantizacao.png).
 
 ### Resultado
 
 <table>
 <tr>
 <td align="left" valign="top">
-  
-<strong>Segunda Imagem:</strong><br>
 
 <p>Imagem original utilizada como entrada:</p>
 
-<img width="30%" src="input/morango-e-olho.jpg" alt="Imagem original">
+<img width="30%" src="input/morango.jpg" alt="Imagem original">
 
 <p>Comparação entre as imagens original e as versões quantizadas em 1, 2, 4 e 8 bit(s):</p>
 
-<img src="input/morango-e-olho.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
+<img src="output/quantizacao.png" alt="Comparação da quantização em 1, 2, 4 e 8 bit(s)">
 
 </td>
 </tr>
@@ -56,18 +54,16 @@ O notebook [`atividade-1-quantizacao.ipynb`](atividade-1-quantizacao.ipynb) foi 
 
 À medida que reduzimos o número de bits, diminuímos a quantidade de tons de cinza disponíveis:
 
-- **8 bits:** 256 níveis — praticamente igual à imagem original, pois ela normalmente já possui 8 bits.
-- **4 bits:** 16 níveis — ainda preserva muitos detalhes; por isso parece muito semelhante à original e à versão de 8 bits.
-- **2 bits:** 4 níveis — perde vários detalhes e apresenta regiões com tons mais uniformes, com transições mais bruscas.
-- **1 bit:** apenas preto e branco — há grande perda de detalhes e nenhuma transição suave de intensidade.
-
-As três imagens — original, 4 bits e 8 bits — parecem parecidas porque 16 níveis de cinza ainda são suficientes para representar visualmente boa parte dos detalhes desse desenho, especialmente por ele já possuir áreas bem definidas e pouco contraste gradual. Porém, observando com atenção, a versão de 4 bits apresenta pequenas faixas ou "degraus" nas regiões sombreadas. Esse efeito é chamado de banding ou posterização.
+- **8 bits:** 256 níveis — imagem idêntica à original, com todo o gradiente suave do desenho a lápis preservado, incluindo a textura do papel e o sombreado sutil do morango.
+- **4 bits:** 16 níveis — visualmente quase indistinguível da original; o sombreado do morango e o fundo continuam suaves, sem degraus perceptíveis.
+- **2 bits:** 4 níveis — o fundo, antes uniforme, passa a exibir um forte ruído "granulado" (speckling), pois os poucos níveis disponíveis não conseguem representar bem a textura sutil do papel. O corpo do morango perde parte do sombreado, ficando com regiões de cinza mais uniformes e bordas mais duras.
+- **1 bit:** apenas preto e branco — o morango vira praticamente uma silhueta binária; os pontinhos (sementes) só continuam visíveis porque formam um forte contraste local, mas todo o sombreado desaparece. O fundo, que era quase branco liso, agora mostra manchas pretas espalhadas nas áreas de textura mais escura do papel.
 
 > **Posterização:** redução visível da quantidade de tons. A imagem passa a apresentar regiões separadas por níveis bem definidos, como ocorre claramente nas versões de 1 e 2 bits.
 >
-> **Banding:** aparecimento de faixas ou "degraus" em áreas que deveriam ter transições suaves, como um degradê. Pode aparecer na versão de 4 bits, principalmente nas regiões sombreadas.
+> **Banding:** aparecimento de faixas, degraus ou ruído granulado em áreas que deveriam ter transições suaves, como o fundo texturizado do papel. Fica evidente já na versão de 2 bits.
 
-Em resumo: quanto menos bits, maior a perda de detalhes e mais abruptas ficam as transições entre claro e escuro. Quanto mais bits, mais suaves e naturais são essas transições.
+Em resumo: como o desenho original já tem baixo contraste e transições suaves (sombreado a lápis e textura de papel), a perda começa a ficar visível já em 2 bits, principalmente como ruído no fundo, e se torna extrema em 1 bit, onde a imagem se reduz a uma silhueta de alto contraste. Já em 4 e 8 bits o resultado é praticamente igual ao original, pois 16 níveis de cinza já são suficientes para reproduzir esse tipo de sombreado suave.
 
 ### Como a quantização foi implementada
 

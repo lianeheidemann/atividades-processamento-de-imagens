@@ -5,7 +5,7 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-[⬅ Voltar para o repositório principal](../../README.md) · [Ver também: versão completa da Atividade 2](README.md)
+[⬅ Voltar para o repositório principal](../../README.md)
 
 ### Sobre o exercício
 
@@ -29,6 +29,7 @@ O notebook [`atividade_2-entregar.ipynb`](atividade_2-entregar.ipynb) foi adapta
 
 1. Coloque as três imagens de entrada em [`input/`](input) (`input_1.png`, `input_2.png`, `input_3.png`) ou ajuste os caminhos das variáveis `nome_arquivo_1`, `nome_arquivo_2` e `nome_arquivo_3`.
 2. Execute as células em ordem: carregamento das imagens, conversão para tons de cinza, cálculo dos histogramas e, por fim, a correção gamma.
+3. As figuras geradas são salvas automaticamente em [`output/`](output).
 
 ### 1. Imagens utilizadas
 
@@ -42,13 +43,13 @@ Três imagens com perfis de iluminação diferentes são usadas para comparar o 
   <tr>
     <td align="left" valign="top">
       <p>Imagens originais:</p>
-      <img width="700" src="input/entregar-imagens-originais.png" alt="Três imagens originais: mandala, sorvete e axolote">
+      <img width="700" src="output/imagens_originais.png" alt="Três imagens originais: mandala, sorvete e axolote">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top">
       <p>Conversão para tons de cinza:</p>
-      <img width="700" src="input/entregar-imagens-cinza.png" alt="As três imagens convertidas para tons de cinza">
+      <img width="700" src="output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
     </td>
   </tr>
 </table>
@@ -75,7 +76,7 @@ plt.hist(
 <table>
   <tr>
     <td align="left" valign="top">
-      <img width="700" src="input/entregar-histogramas.png" alt="Histogramas das três imagens">
+      <img width="700" src="output/histogramas.png" alt="Histogramas das três imagens">
     </td>
   </tr>
 </table>
@@ -99,7 +100,7 @@ resultado_3 = (255 * ((matriz_3 / 255.0) ** gamma)).astype(np.uint8)
 <table>
   <tr>
     <td align="left" valign="top">
-      <img src="input/entregar-gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
+      <img src="output/correcao_gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
     </td>
   </tr>
 </table>

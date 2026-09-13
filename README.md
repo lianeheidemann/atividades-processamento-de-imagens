@@ -13,7 +13,7 @@ Repositório para armazenar as atividades desenvolvidas ao longo da disciplina d
 
 Exercício sobre quantização de imagens em tons de cinza, reduzindo o número de bits (1, 2, 4 e 8 bits) e analisando o impacto na quantidade de detalhes e na suavidade das transições de intensidade, incluindo os efeitos de **posterização** e **banding**.
 
-<img src="atividade/atividade-1/input/olho-2.png">
+<img src="atividade/atividade-1/output/quantizacao.png">
 
 > Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
@@ -25,47 +25,32 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 - Pillow (PIL)
 - Google Colab
 
-### [Atividade 2 — Histograma, Negativo, Equalização e Correção Gamma](atividade/atividade-2/README.md)
+### [Atividade 2 — Histograma e Correção Gamma em Múltiplas Imagens](atividade/atividade-2/README.md)
 
-Exercício com quatro operações clássicas de processamento de imagens em tons de cinza, cada uma implementada de forma manual (pixel a pixel) e de forma vetorizada/pronta (NumPy, Matplotlib ou OpenCV): construção do **histograma de intensidade**, cálculo do **negativo digital**, **equalização do histograma** e **correção gamma**.
-
-<table>
-  <tr>
-    <td align="left" valign="top" width="50%">
-      <p>Imagem de entrada:</p>
-      <img width="270" src="atividade/atividade-2/input/mandala.png" alt="Imagem original">
-    </td>
-    <td align="left" valign="top" width="50%">
-      <p>Conversão para tons de cinza:</p>
-      <img width="270" src="atividade/atividade-2/input/mandala-cinza.png" alt="Imagem em níveis de cinza">
-    </td>
-  </tr>
-</table>
+Exercício com três imagens de perfis de iluminação diferentes (escura, clara e de tons médios), comparando a construção do **histograma de intensidade** de cada uma e o efeito da **correção gamma** (γ = 0,5) aplicada simultaneamente às três.
 
 <table>
   <tr>
     <td align="left" valign="top">
-      <p>Histograma de intensidades da imagem em tons de cinza:</p>
-      <img width="567" src="atividade/atividade-2/input/mandala-histograma.png"
-           alt="Histograma da imagem em níveis de cinza">
+      <p>Imagens originais e conversão para tons de cinza:</p>
+      <img width="700" src="atividade/atividade-2/output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
     </td>
   </tr>
-</table>
-
-<table>
   <tr>
-    <td align="left" valign="top" width="50%">
-      <p>Negativo digital:</p>
-      <img width="270" src="atividade/atividade-2/input/mandala-negativo.png" alt="Imagem original e negativo digital">
+    <td align="left" valign="top">
+      <p>Histogramas das três imagens:</p>
+      <img width="700" src="atividade/atividade-2/output/histogramas.png" alt="Histogramas das três imagens">
     </td>
-    <td align="left" valign="top" width="50%">
-      <p>Histograma equalizado:</p>
-      <img width="270" src="atividade/atividade-2/input/mandala-equalizacao-manual.png" alt="Imagem original e imagem com histograma equalizado">
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+      <p>Correção gamma (γ = 0,5), imagem e histograma antes/depois:</p>
+      <img width="700" src="atividade/atividade-2/output/correcao_gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
     </td>
   </tr>
 </table>
 
-> Notebook: [`atividade_2.ipynb`](atividade/atividade-2/atividade_2.ipynb)
+> Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entregar.ipynb)
 
 **Tecnologias utilizadas**
 
@@ -74,5 +59,3 @@ Exercício com quatro operações clássicas de processamento de imagens em tons
 - Matplotlib
 - Seaborn
 - Pillow (PIL)
-- OpenCV
-- Google Colab
