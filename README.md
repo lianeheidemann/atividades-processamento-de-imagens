@@ -29,7 +29,28 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 
 Exercício sobre construção e interpretação do histograma de intensidade de uma imagem em tons de cinza, contando manualmente a quantidade de pixels de cada intensidade (0 a 255) e exibindo o resultado em um gráfico de barras.
 
-<img src="atividade/atividade-2/input/mandala-histograma.png">
+<table>
+  <tr>
+    <td align="left" valign="top" width="50%">
+      <p>Imagem de entrada:</p>
+      <img width="270" src="input/mandala.png" alt="Imagem original">
+    </td>
+    <td align="left" valign="top" width="50%">
+      <p>Conversão para tons de cinza:</p>
+      <img width="270" src="input/mandala-cinza.png" alt="Imagem em níveis de cinza">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="left" valign="top">
+      <p>Histograma de intensidades da imagem em tons de cinza:</p>
+      <img width="567" src="input/mandala-histograma.png"
+           alt="Histograma da imagem em níveis de cinza">
+    </td>
+  </tr>
+</table>
 
 > Notebook: [`atividade_2.ipynb`](atividade/atividade-2/atividade_2.ipynb)
 
