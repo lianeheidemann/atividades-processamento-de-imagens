@@ -36,6 +36,7 @@ Exercício com três imagens de perfis de iluminação diferentes (escura, clara
 **Correção gamma (γ = 0,5), imagem e histograma antes/depois:**
 
 <img src="atividade/atividade-2/output/correcao_gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
+
 Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entregar.ipynb)
 
 **Tecnologias utilizadas**
