@@ -28,7 +28,7 @@ em [`../input/`](../input):
 <table>
   <tr>
     <td align="left" valign="top">
-      <img width="700" src="output/imagens_originais.png" alt="As três imagens de entrada, já em tons de cinza">
+      <img src="output/imagens_originais.png" alt="As três imagens de entrada, já em tons de cinza">
     </td>
   </tr>
 </table>
@@ -45,25 +45,25 @@ de biblioteca:
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Limiarização (pixel a pixel vs. NumPy):</p>
-      <img width="700" src="output/teste_limiarizacao.png" alt="Teste da função de limiarização">
+      <img src="output/teste_limiarizacao.png" alt="Teste da função de limiarização">
     </td>
  </tr>
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Expansão de contraste (pixel a pixel vs. NumPy):</p>
-      <img width="700" src="output/teste_expansao_contraste.png" alt="Teste da função de expansão de contraste">
+      <img src="output/teste_expansao_contraste.png" alt="Teste da função de expansão de contraste">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Equalização de histograma (manual vs. OpenCV):</p>
-      <img width="700" src="output/teste_equalizacao.png" alt="Teste da função de equalização de histograma">
+      <img src="output/teste_equalizacao.png" alt="Teste da função de equalização de histograma">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top" width="50%">
       <p>Correção gamma (pixel a pixel vs. NumPy):</p>
-      <img width="700" src="output/teste_gamma.png" alt="Teste da função de correção gamma">
+      <img src="output/teste_gamma.png" alt="Teste da função de correção gamma">
     </td>
   </tr>
 </table>
@@ -93,19 +93,19 @@ extremidades. Como a imagem não usa toda a faixa (mínimo 5, máximo 204), a co
     <tr>
     <td align="left" valign="top">
       <p><strong>Imagem 1</strong> — antes/depois da correção gamma (γ = 0.5) com os dois histogramas:</p>
-      <img width="700" src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois">
+      <img src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top">
       <p><strong>Imagem 2</strong> — antes/depois da correção gamma (γ = 4) com os dois histogramas:</p>
-      <img width="700" src="output/imagem2_antes_depois.png" alt="Imagem 2 antes e depois da correção gamma, com histogramas">
+      <img src="output/imagem2_antes_depois.png" alt="Imagem 2 antes e depois da correção gamma, com histogramas">
     </td>
   </tr>
   <tr>
     <td align="left" valign="top">
       <p><strong>Imagem 3</strong> — antes/depois da expansão de contraste (L=5, H=204) com os dois histogramas:</p>
-      <img width="700" src="output/imagem3_antes_depois.png" alt="Imagem 3 antes e depois da expansão de contraste, com histogramas">
+      <img src="output/imagem3_antes_depois.png" alt="Imagem 3 antes e depois da expansão de contraste, com histogramas">
     </td>
   </tr>
 </table>
