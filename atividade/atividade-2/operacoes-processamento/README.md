@@ -92,7 +92,7 @@ extremidades. Como a imagem não usa toda a faixa (mínimo 5, máximo 204), a co
 <table>
     <tr>
     <td align="left" valign="top">
-      <p><strong>Imagem 1</strong> — antes/depois da correção gamma (γ = 4) com os dois histogramas:</p>
+      <p><strong>Imagem 1</strong> — antes/depois da correção gamma (γ = 0.5) com os dois histogramas:</p>
       <img width="700" src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois">
     </td>
   </tr>
