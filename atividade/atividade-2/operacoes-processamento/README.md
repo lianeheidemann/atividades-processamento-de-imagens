@@ -33,6 +33,8 @@ em [`../input/`](../input):
   </tr>
 </table>
 
+---
+
 ### 1. Funções e testes exploratórios
 
 Antes do exercício principal, cada função da é definida e testada isoladamente sobre uma das
@@ -65,6 +67,8 @@ de biblioteca:
     </td>
   </tr>
 </table>
+
+---
 
 ### 2. Diagnóstico e correção por imagem
 
@@ -99,6 +103,8 @@ extremidades. Como a imagem não usa toda a faixa (mínimo 5, máximo 204), a co
     </td>
   </tr>
 </table>
+
+---
 
 ### 3. Conclusão
 
