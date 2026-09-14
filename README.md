@@ -17,15 +17,15 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 
 <img src="atividade/atividade-1/output/quantizacao.png">
 
-> Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
+Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
 **Tecnologias utilizadas**
 
-- Python
-- NumPy
-- Matplotlib
-- Pillow (PIL)
-- Google Colab
+> - Python
+> - NumPy
+> - Matplotlib
+> - Pillow (PIL)
+> - Google Colab
 
 ---
 
@@ -33,39 +33,15 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 
 Exercício com três imagens de perfis de iluminação diferentes (escura, clara e de tons médios), comparando a construção do **histograma de intensidade** de cada uma e o efeito da **correção gamma** (γ = 0,5) aplicada simultaneamente às três.
 
-<table>
-  <tr>
-    <td align="left" valign="top">
-      <p>Imagens originais:</p>
-      <img width="700" src="atividade/atividade-2/output/imagens_originais.png" alt="As três imagens convertidas para tons de cinza">
-    </td>
-  </tr>
-  <tr>
-    <td align="left" valign="top">
-      <p>Conversão para tons de cinza:</p>
-      <img width="700" src="atividade/atividade-2/output/imagens_cinza.png" alt="As três imagens convertidas para tons de cinza">
-    </td>
-  </tr>
-  <tr>
-    <td align="left" valign="top">
-      <p>Histogramas das três imagens:</p>
-      <img width="700" src="atividade/atividade-2/output/histogramas.png" alt="Histogramas das três imagens">
-    </td>
-  </tr>
-  <tr>
-    <td align="left" valign="top">
-      <p>Correção gamma (γ = 0,5), imagem e histograma antes/depois:</p>
-      <img width="700" src="atividade/atividade-2/output/correcao_gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
-    </td>
-  </tr>
-</table>
+**Correção gamma (γ = 0,5), imagem e histograma antes/depois:**
 
-> Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entregar.ipynb)
+<img src="atividade/atividade-2/output/correcao_gamma.png" alt="Imagens e histogramas antes e depois da correção gamma">
+Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entregar.ipynb)
 
 **Tecnologias utilizadas**
 
-- Python
-- NumPy
-- Matplotlib
-- Seaborn
-- Pillow (PIL)
+> - Python
+> - NumPy
+> - Matplotlib
+> - Seaborn
+> - Pillow (PIL)
