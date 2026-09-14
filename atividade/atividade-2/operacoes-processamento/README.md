@@ -90,6 +90,12 @@ extremidades. Como a imagem não usa toda a faixa (mínimo 5, máximo 204), a co
 **expansão de contraste (L=5, H=204)**.
 
 <table>
+    <tr>
+    <td align="left" valign="top">
+      <p><strong>Imagem 1</strong> — antes/depois da correção gamma (γ = 4) com os dois histogramas:</p>
+      <img width="700" src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois">
+    </td>
+  </tr>
   <tr>
     <td align="left" valign="top">
       <p><strong>Imagem 2</strong> — antes/depois da correção gamma (γ = 4) com os dois histogramas:</p>
