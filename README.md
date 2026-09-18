@@ -46,3 +46,21 @@ Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entre
 > - Matplotlib
 > - Seaborn
 > - Pillow (PIL)
+
+---
+
+### [Atividade 3 — Realce e Segmentação em Múltiplas Imagens](atividade/atividade-3/README.md)
+
+Exercício com cinco imagens com problemas de exposição/contraste diferentes, aplicando a cada uma a técnica de tratamento mais adequada: **correção gama**, **expansão de contraste**, **equalização de histograma**, **limiarização** e **negativo**.
+
+<img src="atividade/atividade-3/output/09_comparacao_antes_depois.png" alt="Comparação antes e depois de imagem e histograma para as cinco imagens">
+
+Notebook: [`atividade-3.ipynb`](atividade/atividade-3/atividade-3.ipynb)
+
+**Tecnologias utilizadas**
+
+> - Python
+> - NumPy
+> - OpenCV
+> - Matplotlib
+> - Pillow (PIL)
