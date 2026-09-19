@@ -11,7 +11,7 @@
 
 > Selecionar cinco imagens com problemas de exposição ou contraste diferentes, converter cada uma para tons de cinza e aplicar, para cada uma delas, a técnica de tratamento mais adequada ao seu problema específico: correção gama, expansão de contraste, equalização de histograma, limiarização e negativo.
 
-### 1. Imagens de input
+## 1. Imagens de input
 
 Cinco imagens com características distintas são usadas para explorar uma técnica de tratamento diferente em cada uma:
 
@@ -33,7 +33,7 @@ Cinco imagens com características distintas são usadas para explorar uma técn
 imagem_cinza_1 = np.array(imagem_1.convert("L"), dtype=np.uint8)
 ```
 
-### 2. Histogramas
+## 2. Histogramas
 
 O histograma de cada imagem original é calculado para identificar o problema de exposição/contraste de cada uma antes de escolher a técnica de tratamento:
 
@@ -45,7 +45,7 @@ O histograma de cada imagem original é calculado para identificar o problema de
   </tr>
 </table>
 
-### 3. Tratamento de imagens
+## 3. Tratamento de imagens
 
 #### Imagem 1 — Correção gama
 
@@ -113,7 +113,7 @@ resultado_negativo = 255 - imagem_cinza_5
 
 <img src="output/07_imagem_05_negativo.png" alt="Imagem 5 antes e depois do negativo">
 
-### 4. Histograma das imagens tratadas
+## 4. Histograma das imagens tratadas
 
 Após aplicar a técnica adequada a cada imagem, os novos histogramas mostram o efeito de cada tratamento na distribuição de intensidades:
 
@@ -125,7 +125,7 @@ Após aplicar a técnica adequada a cada imagem, os novos histogramas mostram o 
   </tr>
 </table>
 
-### 5. Comparação antes/depois
+## 5. Comparação antes/depois
 
 Visão consolidada com a imagem original, a imagem tratada e os histogramas de ambas, lado a lado, para cada uma das cinco imagens:
 
@@ -137,7 +137,7 @@ Visão consolidada com a imagem original, a imagem tratada e os histogramas de a
   </tr>
 </table>
 
-### 6. Resumo das técnicas aplicadas
+## 6. Resumo das técnicas aplicadas
 
 | Imagem | Problema identificado | Técnica aplicada |
 | :----: | :--------------------- | :---------------- |
