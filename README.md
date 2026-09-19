@@ -4,6 +4,7 @@
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
 Repositório para armazenar as atividades desenvolvidas ao longo da disciplina de Processamento de Imagem.
 
@@ -19,14 +20,6 @@ Exercício sobre quantização de imagens em tons de cinza, reduzindo o número 
 
 Notebook: [`atividade-1-quantizacao.ipynb`](atividade/atividade-1/atividade-1-quantizacao.ipynb)
 
-**Tecnologias utilizadas**
-
-> - Python
-> - NumPy
-> - Matplotlib
-> - Pillow (PIL)
-> - Google Colab
-
 ---
 
 ### [Atividade 2 — Histograma e Correção Gamma em Múltiplas Imagens](atividade/atividade-2/README.md)
@@ -39,14 +32,6 @@ Exercício com três imagens de perfis de iluminação diferentes (escura, clara
 
 Notebook: [`atividade_2-entregar.ipynb`](atividade/atividade-2/atividade_2-entregar.ipynb)
 
-**Tecnologias utilizadas**
-
-> - Python
-> - NumPy
-> - Matplotlib
-> - Seaborn
-> - Pillow (PIL)
-
 ---
 
 ### [Atividade 3 — Realce e Segmentação em Múltiplas Imagens](atividade/atividade-3/README.md)
@@ -56,11 +41,3 @@ Exercício com cinco imagens com problemas de exposição/contraste diferentes, 
 <img src="atividade/atividade-3/output/09_comparacao_antes_depois.png" alt="Comparação antes e depois de imagem e histograma para as cinco imagens">
 
 Notebook: [`atividade-3.ipynb`](atividade/atividade-3/atividade-3.ipynb)
-
-**Tecnologias utilizadas**
-
-> - Python
-> - NumPy
-> - OpenCV
-> - Matplotlib
-> - Pillow (PIL)
