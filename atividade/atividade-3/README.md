@@ -137,7 +137,7 @@ Visão consolidada com a imagem original, a imagem tratada e os histogramas de a
   </tr>
 </table>
 
-### Resumo das técnicas aplicadas
+### 6. Resumo das técnicas aplicadas
 
 | Imagem | Problema identificado | Técnica aplicada |
 | :----: | :--------------------- | :---------------- |
