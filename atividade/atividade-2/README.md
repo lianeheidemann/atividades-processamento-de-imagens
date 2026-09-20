@@ -14,15 +14,15 @@
 
 Três imagens com perfis de iluminação diferentes são usadas para comparar o efeito das operações em cenários distintos:
 
-- **Mandala** — imagem escura, com fundo preto.
-- **Sorvete** — imagem clara, com fundo transparente/branco.
-- **Cute** (axolote) — imagem de tons médios, com boa distribuição de intensidades.
+- **Mesa à noite** — imagem escura, mesa de trabalho iluminada apenas pela luminária.
+- **Orla urbana** — imagem clara, calçadão à beira-rio com céu estourado ao fundo.
+- **Dália** — imagem de tons médios, flor em close com boa distribuição de intensidades.
 
 <table>
   <tr>
     <td align="left" valign="top">
       <p>Imagens originais:</p>
-      <img src="output/imagens_originais.png" alt="Três imagens originais: mandala, sorvete e axolote">
+      <img src="output/imagens_originais.png" alt="Três imagens originais: mesa à noite, orla urbana e dália">
     </td>
   </tr>
   <tr>
@@ -60,9 +60,9 @@ plt.hist(
   </tr>
 </table>
 
-- **Imagem 1 (mandala):** as intensidades estão concentradas principalmente entre aproximadamente 10 e 60, indicando uma imagem predominantemente escura, embora existam alguns pixels claros.
-- **Imagem 2 (sorvete):** há uma forte concentração próxima de 230, indicando predominância de regiões muito claras, principalmente por causa do fundo branco e quadriculado.
-- **Imagem 3 (axolote):** as intensidades concentram-se principalmente entre 150 e 180, indicando uma imagem relativamente clara, com pouco contraste e predominância de tons médios-claros.
+- **Imagem 1 (mesa à noite):** as intensidades estão fortemente concentradas entre 0 e 60 (93,5% dos pixels), com média 13,7 e nenhum pixel acima de 108, indicando uma imagem muito escura, sem uso da faixa superior de intensidades.
+- **Imagem 2 (orla urbana):** há uma forte concentração acima de 200 (81,5% dos pixels), com média 229,3, indicando predominância de regiões muito claras, principalmente por causa do céu estourado ao fundo.
+- **Imagem 3 (dália):** as intensidades estão amplamente distribuídas entre 7 e 255, com média 113,3, indicando uma imagem de tons médios com boa variedade de intensidades.
 
 ### 3. Correção gamma
 
@@ -84,4 +84,4 @@ resultado_3 = (255 * ((matriz_3 / 255.0) ** gamma)).astype(np.uint8)
   </tr>
 </table>
 
-A correção gamma fez menos diferença na Imagem 2 (sorvete), pois seu histograma original já estava fortemente concentrado nas intensidades altas, principalmente próximo de 230, indicando que ela já era predominantemente clara. Como foi utilizado γ = 0,5, os pixels foram deslocados em direção ao branco, mas as intensidades dessa imagem já estavam próximas do valor máximo de 255; por isso, a alteração visual foi menor do que nas imagens 1 (mandala) e 3 (axolote), que tinham mais espaço para clarear.
+A correção gamma fez menos diferença na Imagem 2 (orla urbana): a diferença média de intensidade entre antes e depois foi de apenas 11,2 níveis, contra 32,5 na Imagem 1 e 51,0 na Imagem 3. Isso acontece porque o histograma original da Imagem 2 já estava fortemente concentrado nas intensidades altas (81,5% dos pixels acima de 200), indicando que ela já era predominantemente clara. Como foi utilizado γ = 0,5, os pixels foram deslocados em direção ao branco, mas as intensidades dessa imagem já estavam próximas do valor máximo de 255; por isso, a alteração visual foi menor do que nas imagens 1 (mesa à noite) e 3 (dália), que tinham mais espaço para clarear.
