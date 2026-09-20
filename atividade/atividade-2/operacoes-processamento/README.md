@@ -5,7 +5,7 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-[![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/lianeheidemann/atividades-processamento-de-imagens/blob/main/atividade/atividade-2/operacoes-processamento/operacoes_processamento_imagens.ipynb)
+[![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/lianeheidemann/atividades-processamento-de-imagens/blob/main/atividade/atividade-2/archive/operacoes_processamento_imagens.ipynb)
 
 [⬅ Voltar para a Atividade 2](../README.md)
 
@@ -76,26 +76,24 @@ Para cada uma das três imagens, o notebook plota o histograma, faz um diagnóst
 de intensidades e aplica **uma única operação**, escolhida de acordo com o problema específico de
 cada imagem — nenhuma das três recebe a mesma correção.
 
-**Imagem 1 — escura demais.** Concentração forte de pixels entre 0 e 60 (93,5% do total), com média
-13,7 e valor máximo de apenas 108 — a imagem não usa boa parte da faixa de 0 a 255. Como há espaço
-real para esticar o intervalo, a correção escolhida foi **expansão de contraste (L=0, H=108)**, que
-usa todo o intervalo realmente ocupado pela imagem.
+**Imagem 1 — escura demais.** Concentração forte de pixels entre 0 e 60 (~65% do total). Como a
+imagem já usa toda a faixa de 0 a 255, a expansão de contraste não teria efeito; a correção
+escolhida foi **gamma, γ = 0,5**, que clareia proporcionalmente mais os tons baixos.
 
-**Imagem 2 — clara demais/saturada.** Cerca de 81,5% dos pixels acima de 200, com média 229,3 e
-valor máximo já em 255 — como a imagem já satura no branco, a expansão de contraste não reduziria
-esse estouro (o teto já está em 255); a correção escolhida foi **gamma, γ = 4**, que escurece a
+**Imagem 2 — clara demais/saturada.** Cerca de 82% dos pixels acima de 200, com dois picos muito
+altos perto de 230 e 255. A equalização de histograma foi testada primeiro, mas distorcia a imagem
+(a CDF satura logo no início da faixa); a correção escolhida foi **gamma, γ = 4**, que escurece a
 saturação sem gerar artefatos.
 
-**Imagem 3 — tons médios.** Histograma amplo entre 7 e 255 (média 113,3, desvio 53,9), sem grandes
-acúmulos nas extremidades — a imagem já ocupa quase toda a faixa de intensidades, então esticar o
-contraste teria pouco efeito. A correção escolhida foi a **equalização de histograma**, que
-redistribui as intensidades para melhorar o contraste local.
+**Imagem 3 — bem exposta.** Histograma unimodal e compacto entre 100 e 200, sem acúmulos nas
+extremidades. Como a imagem não usa toda a faixa (mínimo 5, máximo 204), a correção escolhida foi
+**expansão de contraste (L=5, H=204)**.
 
 <table>
     <tr>
     <td align="left" valign="top">
-      <p><strong>Imagem 1</strong> — antes/depois da expansão de contraste (L=0, H=108) com os dois histogramas:</p>
-      <img src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois da expansão de contraste, com histogramas">
+      <p><strong>Imagem 1</strong> — antes/depois da correção gamma (γ = 0.5) com os dois histogramas:</p>
+      <img src="output/imagem1_antes_depois.png" alt="Imagem 1 antes e depois">
     </td>
   </tr>
   <tr>
@@ -106,8 +104,8 @@ redistribui as intensidades para melhorar o contraste local.
   </tr>
   <tr>
     <td align="left" valign="top">
-      <p><strong>Imagem 3</strong> — antes/depois da equalização de histograma com os dois histogramas:</p>
-      <img src="output/imagem3_antes_depois.png" alt="Imagem 3 antes e depois da equalização de histograma, com histogramas">
+      <p><strong>Imagem 3</strong> — antes/depois da expansão de contraste (L=5, H=204) com os dois histogramas:</p>
+      <img src="output/imagem3_antes_depois.png" alt="Imagem 3 antes e depois da expansão de contraste, com histogramas">
     </td>
   </tr>
 </table>
@@ -116,10 +114,10 @@ redistribui as intensidades para melhorar o contraste local.
 
 ### 3. Conclusão
 
-A operação que fez **menos diferença** foi a aplicada na Imagem 1 (mesa à noite): a diferença média
-de intensidade entre antes e depois foi de apenas 18,2 níveis, contra 22,9 na Imagem 3 e 45,1 na
-Imagem 2. Isso acontece porque, embora a Imagem 1 seja muito escura, a maior parte dos seus pixels
-está concentrada bem perto de zero (média 13,7); mesmo esticando o intervalo real da imagem
-(L=0, H=108) para toda a faixa de 0 a 255, o deslocamento absoluto médio de cada pixel continua
-pequeno. Já a Imagem 2 tinha um problema de exposição mais grave (saturação forte perto do branco),
-então a correção gamma aplicada produziu uma mudança bem mais visível.
+A operação que fez **menos diferença** foi a aplicada na Imagem 3 (bem exposta): a diferença média
+de intensidade entre antes e depois foi de apenas 35,7 níveis, contra 50,9 na Imagem 1 e 45,6 na
+Imagem 2. Isso acontece porque a Imagem 3 já estava bem exposta — seu intervalo de intensidades já
+utilizado (L=5, H=204) cobre boa parte da faixa possível, então a expansão de contraste precisou
+"esticar" pouco a imagem. Já as imagens 1 e 2 tinham problemas de exposição mais graves (excesso de
+pixels escuros ou muito claros concentrados em faixas estreitas), então as correções aplicadas
+produziram mudanças bem mais visíveis.
